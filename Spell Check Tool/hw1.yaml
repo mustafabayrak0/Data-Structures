@@ -1,0 +1,47 @@
+- build:
+    run: g++ -Wall -Werror src/main.cpp src/WordList.cpp -I include -o bin/main
+    exit: 0
+    points: 20
+    blocker: true
+
+###---This calico file is for you to check your code.---###
+###---Before Submitting please make sure you are passing all cases.---###
+###---This is not the grading file so taking 100 does not corresponds to full grade for your assignment---###
+###---Passing all cases shows you that your output is compatible with the grading file---###
+
+- case1:
+    run: ./bin/main vocabulary.txt
+    script:
+        - expect: '.*'
+        - send: '1'
+        - expect: '.*'
+        - send: '5'
+        - expect: '(.*)a(.*)ability(.*)able(.*)about(.*)above(.*)'
+    exit: 0
+    points: 20
+
+- case2:
+    run: ./bin/main vocabulary.txt
+    script:
+        - expect: '.*'
+        - send: '2'
+        - expect: '.*'
+        - send: '5'
+        - expect: '.*'
+        - send: 'abl'
+        - expect: '(.*)2(.*)4(.*)1(.*)4(.*)4(.*)'
+    exit: 0
+    points: 30
+
+- case3:
+    run: ./bin/main vocabulary.txt
+    script:
+        - expect: '.*'
+        - send: '3'
+        - expect: '.*'
+        - send: '4'
+        - expect: '.*'
+        - send: 'abl'
+        - expect: '(.*)able(.*)a(.*)all(.*)table(.*)'
+    exit: 0
+    points: 30
