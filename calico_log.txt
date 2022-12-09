@@ -1,6 +1,0 @@
-build .................................... PASSED
-simple_walktrough ........................ PASSED
-walktrough_with_joker1 ................... PASSED
-walktrough_with_joker2 ................... PASSED
-complex_walktrough ....................... PASSED
-Grade: 0 / 0
