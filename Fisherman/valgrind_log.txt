@@ -1,0 +1,22 @@
+==2931== Memcheck, a memory error detector
+==2931== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2931== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==2931== Command: ./bin/main
+==2931== 
+Island ID: 4, Fish Count: 3
+Island ID: 2, Fish Count: 3
+Island ID: 6, Fish Count: 2
+Island ID: 5, Fish Count: 1
+Island ID: 1, Fish Count: 4
+Island ID: 3, Fish Count: 6
+Island ID: 7, Fish Count: 1
+Max fish count: 11
+==2931== 
+==2931== HEAP SUMMARY:
+==2931==     in use at exit: 0 bytes in 0 blocks
+==2931==   total heap usage: 11 allocs, 11 frees, 85,824 bytes allocated
+==2931== 
+==2931== All heap blocks were freed -- no leaks are possible
+==2931== 
+==2931== For counts of detected and suppressed errors, rerun with: -v
+==2931== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
